@@ -1,15 +1,15 @@
 function getComputerChoice () {
     const randomNumber = Math.random();
-    let randomChoice;
+    let computerChoice;
 
     if (randomNumber >= 0 && randomNumber < 0.33) {
-        randomChoice = "rock";
+        computerChoice = "rock";
     } else if (randomNumber >= 0.33 && randomNumber < 0.66) {
-        randomChoice = "paper";
+        computerChoice = "paper";
     } else 
-        randomChoice = "scissors";
+        computerChoice = "scissors";
    
-    return randomChoice;
+    return computerChoice;
 };
 
 console.log(getComputerChoice());
