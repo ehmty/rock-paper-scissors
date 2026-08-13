@@ -47,7 +47,7 @@ ELSE log the string "You lose! computerChoice beats humanChoice!"
         INCREMENT computerScore
 ENDIF
 
-##Step 6: Logic to play the entire game
+##Step 6: Logic to play the entire game (no loops learned yet)
 
 CALL playGame RETURNING winner
 MOVE playRound + score variables in scope of playGame
