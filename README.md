@@ -46,3 +46,13 @@ IF humanChoice is scissors and computerChoice is paper OR
 ELSE log the string "You lose! computerChoice beats humanChoice!"
         INCREMENT computerScore
 ENDIF
+
+##Step 6: Logic to play the entire game
+
+CALL playGame RETURNING winner
+MOVE playRound + score variables in scope of playGame
+INVOKE playRound 5x
+IF humanScore is greather than computerScore after the rounds
+    THEN SET winner to human
+ELSE THEN SET winner to computer
+ENDIF
