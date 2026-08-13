@@ -18,3 +18,14 @@ ELSE IF that number is greater than or equal 0.3 and lower than 0.6
     THEN SET the string to "paper"
 ELSE SET the string to "scissors"
 ENDIF
+
+
+##Step 3: Logic to get human choice
+
+CALL getHumanChoice RETURNING humanChoice
+GET user input in console
+
+
+##Step 4: Declare players score variables
+
+INIT in global scope two values, one for computer, one for human with 0

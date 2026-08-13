@@ -12,4 +12,7 @@ function getComputerChoice () {
     return computerChoice;
 };
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    const humanChoice = prompt("rock, paper or scissors?");
+    return humanChoice;
+}
