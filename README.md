@@ -29,3 +29,20 @@ GET user input in console
 ##Step 4: Declare players score variables
 
 INIT in global scope two values, one for computer, one for human with 0
+
+
+##Step 5: Logic to play a single round
+
+CALL playRound with computerChoice and humanChoice
+SET humanChoice to lowercase
+IF humanChoice equal to computerChoice
+    THEN log the string "TIE! Same choices!"
+    INCREMENT both scores
+IF humanChoice is scissors and computerChoice is paper OR
+    humanChoice is rock and computerChoice is scissors OR
+    humanChoice is paper and computerChoice is rock
+        THEN log the string "You win! humanChoice beats computerChoice!"
+        INCREMENT humanScore
+ELSE log the string "You lose! computerChoice beats humanChoice!"
+        INCREMENT computerScore
+ENDIF
