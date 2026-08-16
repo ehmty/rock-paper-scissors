@@ -43,25 +43,7 @@ function playGame () {
         }
     }
 
-    computerSelection = getComputerChoice();
-    humanSelection = getHumanChoice();
-    playRound(computerSelection,humanSelection);
 
-    computerSelection = getComputerChoice();
-    humanSelection = getHumanChoice();
-    playRound(computerSelection,humanSelection);
-
-    computerSelection = getComputerChoice();
-    humanSelection = getHumanChoice();
-    playRound(computerSelection,humanSelection);
-
-    computerSelection = getComputerChoice();
-    humanSelection = getHumanChoice();
-    playRound(computerSelection,humanSelection);
-
-    computerSelection = getComputerChoice();
-    humanSelection = getHumanChoice();
-    playRound(computerSelection,humanSelection);
 
     if (humanScore > computerScore) {
         console.log("The winner is the human!");
