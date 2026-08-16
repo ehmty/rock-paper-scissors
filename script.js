@@ -1,12 +1,10 @@
-
-
 function getComputerChoice () {
-    const randomNumber = Math.random();
+    const randomNumber = Math.floor((Math.random()*3))+1
     let computerChoice;
 
-    if (randomNumber >= 0 && randomNumber < 0.33) {
+    if (randomNumber === 1) {
         computerChoice = "rock";
-    } else if (randomNumber >= 0.33 && randomNumber < 0.66) {
+    } else if (randomNumber === 2) {
         computerChoice = "paper";
     } else 
         computerChoice = "scissors";
